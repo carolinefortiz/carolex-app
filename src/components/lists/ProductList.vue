@@ -12,7 +12,7 @@
 
         <q-card-section>
           <div class="text-subtitle2 row justify-between items-center">
-            R$ {{ product.price }}
+            {{ formatToBRL(product.price) }}
             <q-btn color="primary" icon="add_shopping_cart" round flat />
           </div>
         </q-card-section>
@@ -22,6 +22,8 @@
 </template>
 
 <script>
+import { formatToBRL } from "brazilian-values";
+
 export default {
   name: "ProductList",
   props: {
@@ -29,6 +31,9 @@ export default {
       type: Array,
       required: true,
     },
+  },
+  methods: {
+    formatToBRL,
   },
 };
 </script>
