@@ -37,6 +37,13 @@ export default defineComponent({
           photo:
             "https://static.cdnlive.com.br/uploads/724/unidade/16926543858831_zoom.jpg",
         },
+        {
+          id: 4,
+          name: "Batom Ruby Rose",
+          price: 24.99,
+          photo:
+            "https://static.cdnlive.com.br/uploads/724/unidade/16926543858831_zoom.jpg",
+        },
       ],
     };
   },
